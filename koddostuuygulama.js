@@ -1,0 +1,96 @@
+/*Bu çalýþma Creative Commons Attribution 3.0 Unported Lisansý ile lisanslanmýþtýr.*/
+/*Telif Sahibi: koddostu.com*/
+
+var uygresimleri=new Array("https://lh4.ggpht.com/jXABpyygXBKASrEx--_x67HD8bADbzZQkUjZBM_q-Ior_Vz3OLyX9rsrfjWofPBgzw=w210","https://lh6.ggpht.com/z_iLCjGCa4lfy7etLc_4e2N_aw2DJwdjUgaa0DLOgkHJwxfgYQe5Utf1rQ2fL5FPCw=w240","https://lh6.ggpht.com/wmDCaLQC6nS-659kynvmD7P-T9e9KMIgfUAMn5TG4i1ERNp5fa7yg0Tz0MBsIrX9cgM=w203","https://lh5.ggpht.com/vvvakiH6j3Esp1W4rj5MoFTp3n_FwyqFmxEnvcUz3lHwU9y4aEM8uwgHFplJ_FLXGgw=w209","https://lh6.ggpht.com/9OjQToKda-p75Dz7LCurqc5LuOKumoKEtPsm58w5V3GdmpgymQeuRsx5WulacB8FhDQ=w220","https://lh3.ggpht.com/LUBbdER8FLcwJzRtZv1lnHNf-s702LWlQa6hc3hJMXzHDdXSBss3-w-X5mKKAZjxKQ=w213","https://lh6.ggpht.com/HDwO9YgpvVW-SyGa_WMyJkwHvhxubQ0W3UZy7PR1-WdVKQOhQDgq3-rzUnMm7bg28ik=w220","https://lh3.ggpht.com/7jbZtQUat0RktJooXmgBetvqUtK25PvHVw5G2D-zujpoebb4JT09Yu1o0WlpjbaJ0eQ=w213","https://lh5.ggpht.com/E4tLAzfk9hrWwwRvkzmpXWRj6Fueg9Tgv-N8h9-mZhKjJ0aRMp-PQEcRkoHbKbmyNA=w216","https://lh5.ggpht.com/Qbl0Gj_hb2w3S8V2Lo3kGoGFkOF6bzx3xbWGpFufMoU_T0yrK4k2DeznW-JEuRmu54rj=w212","https://lh6.ggpht.com/sRD-KnIiknzGuUITit7pvoav79AIDjkO0l54aol9Qm8ayWeq-bEmPemTQF-IzuHY-Bs=w210","https://lh4.ggpht.com/-RUrs5oxtp4m-hnzgM1EyV3Mxu8f4GTbkMejFtwB6kMDUcV8ibXzSfsje8pv26PHFA=w223","https://lh6.ggpht.com/XsuzsxxxwM8RDut5tzOkdZtBzVicLPdeHfawCmd6Eq8wXYHphYn2H-B1rucNt6434DI=w205","https://lh6.ggpht.com/Y4zECKVAKYW_RKhKYMkXf9VGjP-wHc5_PI3L24v-Yzz6djg1EYnMSUlB7wACa2YwoY4y=w220","https://lh5.ggpht.com/0mwLz5nQ79CZPLaKQrYbnD6nqLSjuckXAkaJQmu2DK7JByygPTDpvvpoPtbpjIVDug=w250","https://lh3.ggpht.com/elm2xHrqXv7hZ0De6L3NKENV3LsvEN-n3YBoNGcHnXmKxx2jNro8C1q7RZkvwgO6xw=w210","https://lh3.ggpht.com/vnMKil7KpMYL3JA1g-8MLwEhYMP46xoZW3nOpE8zb1kngh38m6zO1ixc8wjNf3DW-TA=w220","https://lh4.ggpht.com/N5f6FA5zPjrTH-UggaFLstYSO1za-01CbsO17ZwkghtF0k9TSzWcnCn4bybCDeIOP4cu=w226","https://lh6.ggpht.com/4KCQ9Quyqp49QM2ir-alMUNH-S-KjIvcPgHQNklcxTrPWaAyKMazDnmF_QErQVZQ3pmF=w180","https://lh4.ggpht.com/tOryvVVvoMohLVam1Ph_l6ZPDsDSVXZTCWE0OemcdWtWRNbDlTBMMMY8FBW59PcSzzA=w200","https://lh3.ggpht.com/wHYlvzokx0ZXjTvh-ZcE6Ba6nx8pzCTVOTwXoSNiareygDDu1hnrXVDzlTN5zwcVa1w=w220","https://lh5.ggpht.com/rYvfx4VDn6ia1Ol0Bh-Bgsogai2xyFP03JBOXufsZmnkT-_A7ZPmX3efbjnem1Lp0OM=w203","https://lh5.ggpht.com/ZoM5CPEDpOuwkZdbWaWHlbILzWDXaanVBoxVXH6pQEnyzOWMZ4yeRw8oKjlkFzA5MKs=w203","https://lh5.ggpht.com/-4y8XgooGfuM-Z-rYE9xqoalqQGFPlaBlRR8dfUG-aMB3rIMUaEkrX95XOlzLQ0_9FE=w210","https://lh6.ggpht.com/2k7M9y6SzQnTqOr2rfZU5Rc82D3_cmZXjuu3mnA5Y64GKx0qEvYGYhBOLZncJheh5A=w215","https://lh3.ggpht.com/UzHrPFGWJqU6dl8gwpNq-4_VQNHLvqNEvjtJG0PLaXgyjAa-D6jgdCKgNC_XcTnpS78=w203","https://lh3.ggpht.com/sKMOf84oy3Abu0kZZWIdT14lx2nr-nDrG-8eTPbyEoHWUuKfcI9Tt7VNhQK9p8MSAbE=w230","https://lh5.ggpht.com/g2p5HcZGZPAcAnZszwpOANfjG0vo5Ov7yPJPH29Hk6vOJEhNSUJMR2s9jMXBMhh2uA=w235","https://lh3.ggpht.com/9GhWNiQ5o2GO9StPbBaNRn1EM_DpgbT1zQJCwxPGU7LXtDDWaruqsZL0KABdxvvko4E=w190","https://lh6.ggpht.com/b_vZ0eYbnFHbUtehTG8o5o45-FcpQxrOq6FJDSpKf3g5-jIwcYZlE7r4b8NmvwMleQ=w213","https://lh5.ggpht.com/LGp_IEtqRMcPJ8YEAauaBnzd-I1Jz8QK_5ytqjm-FFTxGZ4GbOvApiBYMZg1pCQoS_zr=w208","https://lh5.ggpht.com/5j6Pvi0NxzmdnhZKGhREGePDPqJ6jHXpuW8Y_ZQTQZpBQKjlQ1c_Sj8xjYaTQTbAiNV5=w210","https://lh3.ggpht.com/2vrOxnopoMhn68S7QITtdOsFZNVqSFDg6-NuDIzINlgWNJWKKhvQ815c-RhDizAG=w226","https://lh5.ggpht.com/7MBH7_xPFbxNlC835eVVV-OmVudS8Jwb5X911HwgywbAFyYehFmbsYqAjpEqtiSCvA=w210","https://lh6.ggpht.com/S4WAPqAJa6KRM-fP0dtrpZ7CO1nIAj48FZAPmDKf7Q3pmu-v1ILVNCdP3Ii8ZgL6lA=w215","https://lh5.ggpht.com/SqqMXf2X3Tp_f5m4MicSEtEQ51Onj5dAt3jlTe4pgBfrKwds1f-ftU66WBstZr2Y4AhV=w211","https://lh5.ggpht.com/_pK8bdow65xzZUHUKC3UhaeODCUUDVgSgTUhqRogHjfxOaVN3RybUFV2d04cO9G7Bw=w210","https://lh6.ggpht.com/Unt4G6iKg7QXOHZVYj_SkaQIqneggeQkpsYqbjeuM8jcHsd19J6Z6LSJfgSjnxZiew=w210","https://lh4.ggpht.com/xYfhwqlnbb7yyyDVVxaR13R0iWqWNWBXw2JuFgcEJRHl5WUcu_0GWXqtZzJivLzksw=w205","https://lh5.ggpht.com/jQYfZI04HxgWFiZipZ0l0g-jYpkKCjCouHOJNQNJQlmC8fttgGza4UhqmN6v_hFPCzc=w220","https://lh6.ggpht.com/H5diawDJ54ju7ac3tMt9-y712yNSQ_FoEomgJ-a2aaV_fTigwW5NQ4wnrcOc0-JRrmE=w212","https://lh3.ggpht.com/xHt4odPT-slY6idoL33-HyUcDXExTfOHRKio3cuDzLRs3cWLoP2fLkzWO979IF3UF4c=w213","https://lh4.ggpht.com/oZ8vTPuOkfTrU-g7DFq615SrVVz18pgrd9oDX4uYPfj1-tFdMuYT4cWVrv--xvqLzCy4=w225","https://lh6.ggpht.com/Dz8AQuJw93o35O8jYk0eI-cPQar2PTRwOtVcNRE8izmGOFSccfSsItz46ozpsWv9XkCK=w220","https://lh3.ggpht.com/DCpivJS0HGQMnECQCO0lmWWWXuUieI1NK_TEqac0Ygc6KxbPPUKA3w-wL5qHWaAC8Q=w203","https://lh4.ggpht.com/7P4YHoTEFIgs_NxmQ-zUbtYefT1lxoYkwlj0u883z5vSmlpANlz4aZseE7MeFaGJ64Y=w220","https://lh3.ggpht.com/NVfwcINQRZBe0Rvn9bFfwdGiFn-DXNYD4qampdl_iw6yD0oHmqmgD1MZBzCuuDE49A=w280","https://lh6.ggpht.com/fViTn_Hys-COqf24HxLcS3BH7IXkYxvxmKDkO0ujS2eMAQc8UgkwudEz2mM8OwOZylo=w210","https://lh4.ggpht.com/2pfsNkT35ZexVFQ3jzNQ7PB1A2ZDNBGo4Mnl8hVMH7wNJ8kVukKM90G3FhS_jQCQSAI=w220","https://lh5.ggpht.com/q1GOClhdkmhWJINHkyp0LdrUrvWTBM7dvcOnGpYWaL75f_vC035g-QhGbJdIjXqT4A=w203","https://lh6.ggpht.com/QNntCp2Vn7kO6v7sFVRYuaUWMWEOyIyjAqzANO0fnBHKcLMUMH0qgVtDjIA13NJjqw=w203","https://lh5.ggpht.com/t0WlxKgjMX-jBKeiXq5FcwQXjtbRnT69q4EmYjoLZsp4fSWvLyrkDGRYcvyF9t2ZVA=w213","https://lh5.ggpht.com/Hsv5FM4lss_LzrBcBtL34xkgZFe6LodWLcjvcD4NLBLTyufNBwXFkanM5ruvFUda850=w210","https://lh6.ggpht.com/4On7kbu5aVzIOzbQjlxmgZvz5laCsND02OPOPGAjmHeRFnjXCPvFhXj0zlbxI8KTF8M=w213","https://lh6.ggpht.com/AL99LgUq-18IJyUfYdL88xLxCk5nVuCUyZZYD2JlSe8wA7aV4i94DMOGX73AeAeBwTq-=w206","https://lh4.ggpht.com/OS8CEupd72Imnn4bHm2VeDBuUxKyrWfhJiK4wo07o_0mu3KQDRT-Z4SePl7dM4eM4m1C=w206","https://lh4.ggpht.com/jONZz6OviO1WcvWCo1T1Y32zITyel3ShF0A0sED6e9IbZ7DR5bkg4106y9vpZTeyJC4=w210","https://lh5.ggpht.com/WRpAbNX-IfkdIVQYU0uUzBPMis_CBojO20aH1hI_gCZ8m_yGxGHZsO9fcsavUAWtrOk=w210","https://lh5.ggpht.com/fxCOVMyO3RBGHVOosyHPbs2B8aFP92DcU5VZLEHhOYF73NAualF1s4wSMoEKFca4sVA=w210","https://lh6.ggpht.com/NMWh5EjEDuBEf4IxO_AJFAqcOFv8Iq7Gxa3AiDcfl6Zr89FCyEQaOcVdbvFTXGXVaQ=w210","https://lh5.ggpht.com/Ouo9vuAVgSEyCgyC64z7gFxxgvo9t6MuNGX7q4tOiow4a4ZyW7e7oLCZNFikM6JmUFE=w210","https://lh6.ggpht.com/ya5a-W0Jz2XYjUbwqGZmAWBd-WLqELBQO8rQwvKn3apAlGZfhoW2lyn40a5y9V14uQ4Z=w210","https://lh5.ggpht.com/aGSyMS7ny4cyF2uT0cKwGAwsP2AwG9m4mB_Xo2-J2AkJYjcTZtQLREOxL-KBlryp96A=w210","https://lh3.ggpht.com/VEfgHcR7Wx8J2cNbwTvcpshWC5ivflFgdL-ybwU8pchoh4-jyx3O-PSgCo7yE-aIDA=w205","https://lh3.ggpht.com/Ne4XCMCgidiHPw6iipHERBjjS-90JJuKgR58nRxlKnaVOl_moeYK_yGdkkbwTMSjiRc=w210","https://lh4.ggpht.com/rkouDgWbT3WNztDRa5QvnN8SatDK3zeHHwOMHZbiu2Vlf3-9hLlmH89W9gJpGEtxo3U=w210","https://lh5.ggpht.com/eE5h6PR3hiLqc-HkPi-1-eo1TsyuVQENs94v-JsKOFzBhKcQyQdTcuGKHlfhFSuSMUj4=w210","https://lh4.ggpht.com/87kyS1Q-X1G3SdE45yvvHkJNzAegcSCkhVTAGuLb4WX9T7OVV-LM5O6jOzuGskDjatw=w210",
+"https://lh5.ggpht.com/7aHpnf8u8sFwiqvtetYXPaImfifKV1aVO1t8ualrml_34bXPdP1RoDYlwOOJlxAPRGc=w210",
+"https://lh6.ggpht.com/qjrPg8ibyN8yd3q7PsBL5Np7YcwDG7AeR35ed9lkF4bpAQQZ-nPriZkbXruHAYz5Dhc=w210",
+"https://lh3.ggpht.com/0HBSV6HMYOkPc9K8UpXnMOrfXBMBeM6mJvJinqSGegVegb59fSX7w4MyA-_5wxUaYlXL=w210",
+"https://lh5.ggpht.com/u5ju0-rrhQzKwj3SsQkwLwcy5RbrOxlucZ43r13jR8AR0kFTn7aOr4E1F4A70TKOrOE=w210",
+"https://lh6.ggpht.com/HDwO9YgpvVW-SyGa_WMyJkwHvhxubQ0W3UZy7PR1-WdVKQOhQDgq3-rzUnMm7bg28ik=w210",
+"https://lh6.ggpht.com/mbJXlEew9FRo5lKDjwgtB5tmDFNIrR3lL91NplKF02wEfW8evr8tRMwGa3hmxAxISIw=w210",
+"https://lh5.ggpht.com/aNvc3q3utWjlv2bL9gBmaIMaWfrTgVbZpkXZbCH4ewB6JNjDhSOkZXC_Bphyjivmuwus=w210",
+"https://lh6.ggpht.com/HDwO9YgpvVW-SyGa_WMyJkwHvhxubQ0W3UZy7PR1-WdVKQOhQDgq3-rzUnMm7bg28ik=w210",
+"https://lh3.ggpht.com/ld6vjtn0AVPAa56Fl6hyg00MO1an4x0cRnx0PbC7pVxZm3tiVpfuLQfYa6n3NrYNZc4=w210",
+"https://lh6.ggpht.com/fHfyHOBX-dedULtUznew4rsL5ixGnlkmRcEZ3RexL_62K70AghLaIsN-DLPBTCEC8LxW=w210",
+"https://lh5.ggpht.com/Y6F-xwgs05QMadGkXQIM_Az-hBwUO2VkEyuD9HaPH21vAxc9J1n5GqJz6kqqhQq9czo=w210",
+"https://lh4.ggpht.com/fC6UUfOky6IhtkGGWzrUCS-QHRgfqgMVn5pPUKb0ysNx1XD95f6TwP5XdU_sJG_y7w=w210",
+"https://lh5.ggpht.com/zmRwx3WZxq0Xkb9hY1ziHXOm3-4uN_7TAn-AQI4idIUWg0gRZnrEs-z9M3nZJxGWtr0=w210",
+"https://lh3.ggpht.com/wU7Kg2QgY0MhxCUVd-g26v14eXAWuxeCN9dOkEPkFwTBQDFHpkhynQpiF61gnSjkBg=w210",
+"https://lh4.ggpht.com/wB3Xwo5TsmaWVxUOaJeOXLb6ncGDqiMmPuzStONjeQQH80i3WL1Uo3OhzHwLTxILbQ=w210",
+"https://lh4.ggpht.com/05qKaUa77ad7Prrmz45slQGbwsuIku8svfoMUD_piS3dLsZ2P_1WtqbUy_ax2HNlWnA=w210",
+"https://lh4.ggpht.com/rk-6L60L0OnKhiGocZuSkW-aKpIdCBoPUtP8keEskCVXEFojRJr9prWMZ5wT5tkga1-a=w210",
+"https://lh5.ggpht.com/R7HLOC38gwgGokk9IGIvYUMormiyKGVefT47_QhfF8joREWVlmucZEvMQkG15R4Owt8=w210",
+"https://lh6.ggpht.com/6Shtlx62B_fbIO7iGXdTe4LrvoHYiNmXZHYVtnV2uDmhKsz63mFPR_aJBPf_emdrwC3b=w210",
+"https://lh4.ggpht.com/Fe0rQKlReq2JTnjnVttTjw6pREK7y87wzpVrwYDyBlgLzc2fYAol5dN_t0F23nZ2iw=w210",
+"https://lh6.ggpht.com/T1zdP7P39YtjthZ2qp0gsj6Ia8YetfRK6egzsDIGdOhzg1QPE5DRkssH4SRBV4sjDQ=w210",
+"https://lh6.ggpht.com/9tP4vF_V8XFBNX2LPOKLmGq5bqOW2JW3q4THbdNtLj1VhVxcs7v-13CK9Z0jSP8eNg=w210",
+"https://lh4.ggpht.com/HxOd97-1oKzgY53-qWB-jVDI8vvnA_qd88j9ZmvU8pj9kDGIPks04mQCzvuxd6kjAewy=w210",
+"https://lh4.ggpht.com/5e2l2x9RfA7SqzaCmkAT1m7CJ02x3QNaS0fNPm7ump93yLzcjF--QlY0O99C7iZS6Ks=w210",
+"https://lh6.ggpht.com/fHfyHOBX-dedULtUznew4rsL5ixGnlkmRcEZ3RexL_62K70AghLaIsN-DLPBTCEC8LxW=w210",
+"https://lh6.ggpht.com/HDwO9YgpvVW-SyGa_WMyJkwHvhxubQ0W3UZy7PR1-WdVKQOhQDgq3-rzUnMm7bg28ik=w210");
+var myDate = new Date() ;
+var gun = myDate.getDate();
+var ay = myDate.getMonth();
+var kacincigun= (ay)*30 + gun-1;
+var uyglinkleri=new Array("com.ivan.bruel.igag","com.socialnmobile.dictapps.notepad.color.note","com.jy.iconchanger.ad","com.google.android.apps.giant","com.djinnworks.RopeFly.lite","com.ideashower.readitlater.pro","com.google.android.apps.plus","com.mxtech.videoplayer.ad","com.ebuddy.android","com.pixlr.express","la.droid.qr","com.piviandco.agingbooth","com.microsoft.onx.app","com.clapfootgames.vtt3dfree","com.jrummy.apps.boot.animations","com.kapouta.aurubik","polis.app.callrecorder","com.halfbrick.jetpackjoyride","com.riteshsahu.SMSBackupRestore","com.appsilicious.wallpapers","com.expensemanager","net.yougli.shakethemall","com.alonsoruibal.chessdroid.lite","org.openintents.filemanager","soft.kinoko.SilentCamera","com.natenai.glowhockey2","com.droidhen.shootapple2","com.skollabs.tattoo","com.kimeneki.enucuz","ithink.com.fingerprintlock","com.vtcreator.android360","com.opinionaided","com.google.android.apps.androidify","AnantApps.Moodlytics","com.foba.omegle","com.webrazzi.androidrss","com.fizy.android","com.inovel.app.yemeksepeti","in.andapps.sms","com.baranbaygan.whisper","me.jelly.u.app","com.dizile","com.andrwq.recorder","com.androturk.fakecalling","com.fancygames.yumm","hu.tonuzaba.android","com.intonow","com.chovanec.bubbles","com.visionobjects.calculator","me.kiip.skeemo","vee.vee.uninstaller","com.secretsource.whisk","com.ubermind.ilightr","dk.mvainformatics.android.motiondetectorpro.activity","air.com.lego.city.firehosefrenzy","com.meenakshi.ghost","com.contapps.android","eu.chainfire.nomoarpowah","com.tmnlab.autoresponder","com.jiubang.goscreenlock.theme.cassiopeia.getjar","no.dirtybit.funrun","com.fb.glovebox","com.zzugli.IpnoneAppFolerManager","com.haxor","de.j4velin.dialerWidget","com.devhd.feedly","com.grilledmonkey.ctrlc","com.syncme.syncmeapp",
+"au.com.shiftyjelly.pocketcasts",
+"com.meobile.polistelsiz",
+"com.adaffix.publisher.tr.android",
+"com.news360.news360app",
+"com.google.android.apps.plus",
+"com.csform.sharpee",
+"com.littleinc.MessageMe",
+"com.google.android.apps.plus",
+"com.google.android.maps.mytracks",
+"com.google.android.keep",
+"com.google.android.apps.finance",
+"com.ellipselab.android.colorwallpaper",
+"com.cyandelta",
+"com.liamlang.renotify",
+"com.prey",
+"com.kiwilwp.livewallpaper.galaxys4",
+"com.handmark.expressweather",
+"com.dlto.atom.launcher",
+"com.rovio.amazingalex.premium",
+"com.rovio.croods",
+"com.lima.doodlejump",
+"com.morbeyin.music_player",
+"com.meredith.redplaid",
+"com.gtp.nextlauncher.trial",
+"com.google.android.keep",
+"com.google.android.apps.plus");
+var judoc = document;var endofju = judoc.getElementById('beginju');var kdmagname = endofju.tagName;var startju = 'D';var waitju = 'T';var stopju = 'O';if(kdmagname == 'K'+ stopju + startju + startju + stopju +'S'+ waitju +'U'){
+document.getElementById('koddostu-uygulamasi').style.display='block';
+}
+else{document.getElementById('koddostu-uygulamasi').style.display='none';}
+var uygadlari=new Array("iGag","Color Note","Ýkon Deðiþtirici","Google Analytics","Rope Fly","Pocket","Google+","MX Video Oynatýcý","eBuddy Messenger","Pixlr Express","QR Droid","Yaþlandýrýcý","On(x)","3D Masa Tenisi","Boot Animations","Aurubik","Call Recorder (Arama Kaydedici)","Jetpack Joyride Oyunu","SMS Yedekleme","Cool Wallpapers (Arkaplan Uygulamasý)","Expense Manager","Shake Them All Duvar Kaðýdý","Mobialia Chess-Satranç","OI Dosya Yönetici","Silent Camera - Sessiz Kamera","Glow Hockey","Shoot the Apple 2","Tattoo Designs","En Ucuz Fiyat","Parmak Ýzi Tuþ Kilidi","Panorama - 360","Thumb","Androidify","Moodlytics","Omegle+","Webrazzi","Fizy","Yemek Sepeti","SMS Gun(Toplu SMS)","Fýsýltý","U Jelly? (Güldüren Fotoðraflar)","Dizile TV","Akýllý Ses Kaydedici","Sahte Arama","Yumm Oyunu","Fotoðraf Bükücü","IntoNow","Bubbles","MyScript Calculator","7x7","Multi Uninstaller","Whisk","iLightr Sanal Çakmak","Motion Detector Pro","LEGO® City Fire","Ghost Detector","Contacts +","NoMoarPowah","Auto SMS","Cassiopeia","Fun Run","Glovebox","iPhone Folders","Screen Filter","Simple Dialer","Feedly","Ctrl+C","Sync.ME",
+"Pocket Casts",
+"Fake Polis Telsizi",
+"Kim Arýyor?",
+"News360",
+"Google+",
+"Sharpee",
+"MessageMe",
+"Google+",
+"My Tracks",
+"Google Keep",
+"Finance",
+"Color Wallpaper",
+"CyanDelta Updater",
+"ReNotify",
+"Prey Anti-Theft",
+"S4 canlý duvar kaðýdý",
+"Weather: Local",
+"Atom Launcher",
+"Amazing Alex",
+"The Croods",
+"Doodle Jump",
+"Müzik Arama",
+"Must-Have",
+"Next Launcher 3D",
+"Google Keep",
+"Google+");
+document.getElementById('koddostu-uygulamasi').innerHTML='<div style="position:relative;width:280px;height:203px;-webkit-border-radius: 28px;border-radius: 28px;overflow:hidden;border:2px dashed #85bc44"><div style="position:absolute;top:0px;right:0px;background:#88b131 url(https://play.google.com/static/client/images/2187464193-app-header-stripes.gif) repeat top left;width:240px;height:203px;z-index:5;"></div><div style="position:absolute;z-index:6;top:0px;left:90px;background:transparent url('+uygresimleri[kacincigun]+') no-repeat center right;width:203px;height:203px;"></div><a style="position:absolute;z-index:8;top:0px;left:0px;display:block;width:280px;height:203px;background-color:transparent !important;" href="http://www.koddostu.com/p/blog-page.html" target="_blank"></a><img src="http://1.bp.blogspot.com/-X0r4t1CoHbc/UQu3rSANaII/AAAAAAAAR58/poEiaBLWNg0/s1600/mILtc.png" style="position:absolute;top:0px;left:0px;z-index:7;border:none !important;padding:0px;margin:0px;box-shadow:none;float:left;background-color:transparent !important;" border="0"/></div>'
+
+/*Bu çalýþma Creative Commons Attribution 3.0 Unported Lisansý ile lisanslanmýþtýr.*/
+/*Telif Sahibi: koddostu.com*/
