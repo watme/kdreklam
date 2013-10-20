@@ -1,5 +1,4 @@
-  alert(echat_room_id);
-  var sdcript = document.createElement('div');
+var sdcript = document.createElement('div');
     sdcript.id = 'ababcdcd';
     var heaadfd = document.getElementsByTagName("body")[0];
     heaadfd.appendChild(sdcript);
