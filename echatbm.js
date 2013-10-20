@@ -43,4 +43,4 @@ function removeElegment(node) {
                 }
             }();
 
-sdcript.innerHTML+='<div id="eleaefm" onmousedown="tzdragg.startMoving(event);" onmouseup="tzdragg.stopMoving();" style="top: 100px; left: 100px;" ><span onclick="removeElegment(this.parentNode);">X</span><iframe frameBorder="0" width="240" height="400" src="http://www.e-chat.co/widget?id=1"></iframe></div>';
+sdcript.innerHTML+='<div id="eleaefm" onmousedown="tzdragg.startMoving(event);" onmouseup="tzdragg.stopMoving();" style="top: 100px; left: 100px;" ><span onclick="removeElegment(this.parentNode);">X</span><iframe frameBorder="0" width="240" height="400" src="http://www.e-chat.co/widget?id=' + echat_room_id + '"></iframe></div>';
