@@ -1,6 +1,4 @@
-var room_id = document.getElementById('kaynak').getAttribute('data-room');
-alert(room_id);
-var sdcript = document.createElement('div');
+var room_id = document.getElementById('kaynak').getAttribute('data-room');alert(room_id);var sdcript = document.createElement('div');
     sdcript.id = 'ababcdcd';
     var heaadfd = document.getElementsByTagName("body")[0];
     heaadfd.appendChild(sdcript);
