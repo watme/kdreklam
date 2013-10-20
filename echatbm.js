@@ -1,4 +1,4 @@
-var room_id = document.getElementById('kaynak').getAttribute('data-room');alert(room_id);var sdcript = document.createElement('div');
+var room_id = document.getElementById('kaynak').getAttribute('data-room');var sdcript = document.createElement('div');
     sdcript.id = 'ababcdcd';
     var heaadfd = document.getElementsByTagName("body")[0];
     heaadfd.appendChild(sdcript);
@@ -43,4 +43,4 @@ function removeElegment(node) {
                 }
             }();
 
-sdcript.innerHTML+='<div id="eleaefm" onmousedown="tzdragg.startMoving(event);" onmouseup="tzdragg.stopMoving();" style="top: 100px; left: 100px;" ><span onclick="removeElegment(this.parentNode);">X</span><iframe frameBorder="0" width="240" height="450" src="http://www.e-chat.co/widget?id=1"></iframe></div>';
+sdcript.innerHTML+='<div id="eleaefm" onmousedown="tzdragg.startMoving(event);" onmouseup="tzdragg.stopMoving();" style="top: 100px; left: 100px;" ><span onclick="removeElegment(this.parentNode);">X</span><iframe frameBorder="0" width="240" height="450" src="http://www.e-chat.co/widget?id=' + room_id + '"></iframe></div>';
